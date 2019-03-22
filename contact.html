@@ -10,39 +10,65 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-default navbar-fixed-top uppercase">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a href="index.html" class="navbar-brand">
-                        <img src="assets/images/bear-icon.png" class="hidden-xs hidden-sm"></img></a>
-                    <button class="btn btn-subscribe navbar-btn hidden-md"><i class="fas fa-envelope"></i> SUBSCRIBE</button>
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <nav class="navbar navbar-default navbar-fixed-top uppercase">
+                    <div>
+                        <div class="navbar-header">
+                            <a href="index.html" class="navbar-logo">
+                            <img src="assets/images/bear-icon.png" class="hidden-xs hidden-sm"></img></a>
+                            <button class="btn btn-subscribe navbar-btn hidden-md"><i class="fas fa-envelope"></i> SUBSCRIBE</button>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <i class="fa fa-bars"></i>
                     </button>
-                </div>
-                <div class="collapse navbar-collapse" id="navbar">
-                    <ul class="nav navbar-nav">
-                        <li class="menuitem"><a href="index.html"><i class="fas fa-home"></i> <span>Home</span></a></li>
-                        <li class="menuitem"><a href="about.html"><i class="fas fa-user"></i> <span>About us</span></a></li>
-                        <li class="menuitem"><a href="reviews.html"><i class="fas fa-search"></i> <span>Reviews</span></a></li>
-                        <li class="menuitem"><a href="media.html"><i class="fas fa-video"></i> <span>Media</span></a></li>
-                        <li class="menuitem"><a href="news.html"><i class="far fa-newspaper"></i> <span>News</span></a></li>
-                        <li class="menuitem active"><a href="contact.html"><i class="fas fa-comment-alt"></i> <span>Contact us</span></a></li>
-                    </ul>
-                    <div class="navbar-header navbar-right hidden-xs hidden-sm">
-                        <button class="btn btn-subscribe navbar-btn"><i class="fas fa-envelope"></i> SUBSCRIBE</button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="nav navbar-nav">
+                                <li class="menuitem"><a href="index.html"><i class="fas fa-home"></i> <span>Home</span></a></li>
+                                <li class="menuitem"><a href="about.html"><i class="fas fa-user"></i> <span>About us</span></a></li>
+                                <li class="menuitem"><a href="reviews.html"><i class="fas fa-search"></i> <span>Reviews</span></a></li>
+                                <li class="menuitem"><a href="media.html"><i class="fas fa-video"></i> <span>Media</span></a></li>
+                                <li class="menuitem"><a href="news.html"><i class="far fa-newspaper"></i> <span>News</span></a></li>
+                                <li class="menuitem active"><a href="contact.html"><i class="fas fa-comment-alt"></i> <span>Contact us</span></a></li>
+                            </ul>
+                            <div class="navbar-header navbar-right hidden-xs hidden-sm">
+                                <button class="btn btn-subscribe navbar-btn"><i class="fas fa-envelope"></i> SUBSCRIBE</button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="container-fluid">
+        <div class="contact-container">
+            <div class="row">
+                <div class="overlay col-xs-12"></div>
+                <div class="col-xs-12 content">
+                    <div>
+                        <h1 class="uppercase contact-page-heading text">Contact us!</h1>
+                        <h4 class="contact-page-subheading text">Have a game you want reviewed?<br> Or want to be featured as a guest reviewer?!</h5>
+                    </div>
+                    <div class="row contact-form center-block">
+                        <form class="text">
+                            <label class="form-label">Name</label><input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+                            <label class="form-label">Email</label><input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                            <label class="form-label">Suggestion / Request</label><textarea rows="5" class="form-control" id="suggestion/request" placeholder="Suggestion / Request:"></textarea>
+                            <!-- help with code for attachment button taken from "https://blog.benestudio.co/custom-file-upload-button-with-pure-css-5aacf39aa0a" -->
+                            <div class="upload-btn">
+                                <input type="file" name="myfile" />
+                            </div>
+                            <button type="submit" class="btn btn-submit center-block">Send Suggestion / Request</button>
+                        </form>
                     </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <section>
-
+        </div>
     </section>
-    <footer>
-        <div class="container-fluid footer-container">
+    <footer class="container-fluid">
+        <div class="footer-container">
             <div class="row">
                 <div class="col-xs-12">
                     <div class="discord-link">

@@ -1,12 +1,8 @@
 /*----- Google Font Styles -----*/
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Ubuntu:300,400,500,700');
 
 /*----- Colours -----*/
-
-
-
-
-
 
 /*----- General -----*/
 
@@ -14,10 +10,22 @@
     text-transform: uppercase;
 }
 
+.text {
+    font-family: 'ubuntu', sans-serif;
+    color: #ff9f00;
+}
 
+.row-table {
+    display: table;
+}
+
+.content {
+    position: relative;
+}
 
 
 /*----- Header -----*/
+
 .navbar {
     margin-bottom: 0;
     top: 0;
@@ -29,10 +37,11 @@
     border: 0;
     font-family: 'ubuntu', sans-serif;
     color: #ff9f00;
+    padding-right: 15px;
 }
 
 
- .navbar-toggle {
+.navbar-toggle {
     height: 100%;
     border: 0;
     color: #ff9f00;
@@ -40,10 +49,16 @@
     padding-right: 12px;
     background-color: #ff9f00;
 }
+
 .navbar-default .navbar-toggle:focus,
-.navbar-default .navbar-toggle:hover{
+.navbar-default .navbar-toggle:hover {
     background-color: #CC6200;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
 }
+
 .navbar-default .navbar-toggle i {
     color: #000000;
     text-align: center;
@@ -51,20 +66,26 @@
 }
 
 
-.navbar-brand img{
-  height: 40px;
-  margin-top: 0;
-  padding-top: 0;
+.navbar-logo img {
+    display: block;
+    height: 40px;
+    margin: 10px;
+    padding-top: 0;
 }
 
 .navbar-default .navbar-nav a {
     font-weight: 300;
 }
+
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
     color: #CC6200;
     background-color: #000000;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
 }
 
 
@@ -72,16 +93,22 @@
 .navbar-default .navbar-nav li a {
     color: #ff9f00;
 }
+
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
     color: #CC6200;
     background-color: #000000;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
 }
 
 
 .menuitem a {
     text-decoration: none;
 }
+
 .menuitem a i,
 .menuitem span {
     font-size: 18px;
@@ -93,17 +120,21 @@
     background-color: #ff9f00;
     color: #000000;
     height: 100%;
-    margin-right: 10px;
+    margin: 10px 15px;
     font-size: 18px;
 }
+
 .btn-subscribe:focus,
 .btn-subscribe:hover {
     background-color: #CC6200;
     color: #0000000;
     height: 100%;
+    border: 0;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
 }
-
-
 
 
 
@@ -112,26 +143,32 @@
 
 .overlay {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.25);
     top: 0;
     bottom: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     height: 100%;
 }
 
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
 
-
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
 
 
 
 /*----- Footer -----*/
 
- .footer-container {
-    padding-bottom: 10px;
-    padding-top: 10px;
-    position: relative;
+.footer-container {
+    padding: 10px 0px;
     z-index: 1;
-    width: 100%;
     background-color: #000000;
     border: 0;
     font-family: 'ubuntu', sans-serif;
@@ -142,7 +179,7 @@
 }
 
 
-.discord-link i{
+.discord-link i {
     font-size: 30px;
 }
 
@@ -150,7 +187,8 @@
 .social-media {
     padding-bottom: 15px;
 }
-.social-media li a i{
+
+.social-media li a i {
     width: 40px;
     height: 40px;
     padding-top: 10px;
@@ -160,8 +198,13 @@
     color: #000000;
     background: #ff9f00;
 }
-.social-media li a i:hover{
+
+.social-media li a i:hover {
     background: #CC6200;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
 }
 
 
@@ -171,44 +214,31 @@
 
 /*----- Home -----*/
 
-.home-container{
+.home-container {
     height: 100%;
     width: 100%;
-    margin: 0;
-    padding: 0;
-    background: url("../images/ps4-controller-home.jpg") no-repeat center fixed; 
+    margin: 0px;
+    padding: 25px 0px 125px 0px;
+    background: url("../images/ps4-controller-home.jpg") no-repeat center fixed;
     background-size: cover;
-    display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 }
-.home-container h1,
-.home-container h3{
-    margin-left: 40%;
-}
 
-
-.title-container {
-    background-color: transparent;
-    margin: 0;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    color: #ff9f00;
-    font-family: "ubuntu", sans-serif;
-}
-.title-container h1 {
+.home-page-heading {
     font-weight: 700;
-    margin-left: 30px;
+    margin-right: 20px;
     text-align: right;
     padding-top: 100px;
 }
-.title-container h3 {
-    margin-left: 25px;
+
+.home-page-subheading {
+    margin-right: 20px;
     text-align: right;
 }
-.title-container img{
+
+.home-container img {
     width: 25%;
     margin-left: 75%;
 }
@@ -216,21 +246,238 @@
 
 /*----- About -----*/
 
+.about-container {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 25px 0px 125px 0px;
+    background: url("../images/ps4-controller-green-light.jpg") no-repeat center fixed;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
 
+.about-page-heading {
+    font-weight: 700;
+    text-align: center;
+    padding-top: 100px;
+}
 
+.about-page-subheading {
+    text-align: center;
+    padding-top: 10px;
+}
 
+.about-us-profile-pictures {
+    width: 50%;
+    padding: 10px 0;
+}
 
-
-
-
-
+.about-us-text {
+    padding: 0 15px;
+}
 
 /*----- Reviews -----*/
 
+.reviews-container {
+    height: 100%;
+    margin: 0;
+    padding: 25px 0px 125px 0px;
+    background: url("../images/ps4-controller-blue.jpg") no-repeat center fixed;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.reviews-page-heading {
+    font-weight: 700;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.reviews-page-subheading {
+    text-align: center;
+}
+
+.reviews {
+    margin-top: 30px;
+}
+
+.image-center {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+}
+
+
 /*----- News -----*/
+
+.news-container {
+    height: 100%;
+    margin: 0;
+    padding: 25px 0px 125px 0px;
+    background: url("../images/nintendo-switch-green.jpg") no-repeat center fixed;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.news-page-heading {
+    font-weight: 700;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.news-page-subheading {
+    text-align: center;
+    padding-top: 5px;
+}
+
+/*code for the timeline below was reused from the "Whiskey Drop" mini-project from earlier in the course*/
+.news-timeline-item {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    color: #ff9f00;
+    border-left: 1px solid;
+}
+
+.news-timeline-item p{
+    padding: 0;
+    margin: 0;
+}
+
+.news-timeline-item::before {
+    content: attr(dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.news-timeline-item::after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 3em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: #ff9f00;
+}
+
+/* end of reused timeline code*/
+
+.news-timeline {
+    margin-bottom: 30px;
+}
+
+
 
 /*----- Media -----*/
 
+.media-container {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 25px 0px 125px 0px;
+    background: url("../images/playstation-wood.jpg") no-repeat center fixed;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.media-page-heading {
+    font-weight: 700;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.media-page-subheading {
+    text-align: center;
+    padding-top: 5px;
+}
+
+/* help with iframe box taken from: "https://blog.theodo.fr/2018/01/responsive-iframes-css-trick/" */
+.video-box {
+    position: relative;
+    overflow: hidden;
+    padding-top: 46.5%;
+    margin-top: 25px;
+}
+.video {
+position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+/*end of help with iframe box */
+
+
 /*----- Contact -----*/
+
+.contact-container {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 25px 0px 125px 0px;
+    background: url("../images/ps4-controller-white.jpg") no-repeat center fixed;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.contact-container .contact-page-heading {
+    font-weight: 700;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.contact-container .contact-page-subheading {
+    text-align: center;
+    padding-top: 5px;
+    position: relative;
+}
+
+.contact-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.btn-submit:focus,
+.btn-submit:hover {
+    background-color: #CC6200;
+    color: #0000000;
+}
+
+/* help with code for attachment button taken from "https://blog.benestudio.co/custom-file-upload-button-with-pure-css-5aacf39aa0a" */
+.upload-btn input[type=file] {
+    font-size: 17px;
+    position: relative;
+    opacity: 1;
+    color: #ff9f00;
+    margin-top: 5px;
+}
+
+button[type="submit"] {
+    background-color: #ff9f00;
+    color: #000000;
+    font-size: 18px;
+    margin: 30px auto;
+}
+
+form label {
+    padding-top: 10px;
+}
 
 /*----- Media Queries -----*/
