@@ -41,16 +41,18 @@
 }
 
 
-.navbar-toggle {
+.navbar-toggle,
+.navbar-default .navbar-toggle:focus {
     height: 100%;
     border: 0;
     color: #ff9f00;
     padding-left: 12px;
     padding-right: 12px;
     background-color: #ff9f00;
+    margin-right: 0;
 }
 
-.navbar-default .navbar-toggle:focus,
+
 .navbar-default .navbar-toggle:hover {
     background-color: #CC6200;
     transition: all 0.3s ease-in-out;
@@ -65,6 +67,9 @@
     font-size: 18px;
 }
 
+.navbar-collapse {
+    border: 0;
+}
 
 .navbar-logo img {
     display: block;
@@ -115,16 +120,15 @@
     text-align: center;
 }
 
-
 .btn-subscribe {
     background-color: #ff9f00;
     color: #000000;
     height: 100%;
     margin: 10px 15px;
     font-size: 18px;
+    border: 0;
 }
 
-.btn-subscribe:focus,
 .btn-subscribe:hover {
     background-color: #CC6200;
     color: #0000000;
@@ -136,6 +140,10 @@
     -o-transition: all 0.3s ease-in-out;
 }
 
+.btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none;
+}
 
 
 
@@ -178,6 +186,9 @@
     font-size: 15px;
 }
 
+.contact-us-link i {
+    font-size: 30px;
+}
 
 .discord-link i {
     font-size: 30px;
@@ -228,19 +239,19 @@
 
 .home-page-heading {
     font-weight: 700;
-    margin-right: 20px;
+    margin-right: 25px;
     text-align: right;
     padding-top: 100px;
 }
 
 .home-page-subheading {
-    margin-right: 20px;
+    margin-right: 25px;
     text-align: right;
 }
 
 .home-container img {
     width: 25%;
-    margin-left: 75%;
+    float: right;
 }
 
 
@@ -307,7 +318,7 @@
 
 .image-center {
     display: block;
-    margin: 0 auto;
+    margin: 25px auto;
     width: 75%;
 }
 
@@ -335,6 +346,7 @@
     text-align: center;
     padding-top: 5px;
 }
+
 
 /*code for the timeline below was reused from the "Whiskey Drop" mini-project from earlier in the course*/
 .news-timeline-item {
@@ -431,18 +443,21 @@ position: absolute;
     padding: 25px 0px 125px 0px;
     background: url("../images/ps4-controller-white.jpg") no-repeat center fixed;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     align-items: center;
     justify-content: center;
     position: relative;
 }
 
-.contact-container .contact-page-heading {
+.contact-page-heading {
     font-weight: 700;
     text-align: center;
     padding-top: 100px;
 }
 
-.contact-container .contact-page-subheading {
+.contact-page-subheading {
     text-align: center;
     padding-top: 5px;
     position: relative;
@@ -480,4 +495,42 @@ form label {
     padding-top: 10px;
 }
 
+
+/*----- Subscribe Form -----*/
+
+.modal-header {
+    border-bottom-color: #ff9f00;
+}
+
+.modal-header .btn-close {
+    color: #ff9f00;
+    float: right;
+    background-color: #000000;
+    border: 0;
+    font-size: 20px;
+}
+
+.modal-content,
+.modal-content p {
+    background-color: #000000;
+    color: #ff9f00;
+    border:;
+    border-color: #ff9f00;
+}
+
 /*----- Media Queries -----*/
+
+/*@media(min-width: 768px) {
+    .menuitem span {
+        font-size: 12px;
+    }
+    .btn-subscribe {
+        margin:3px;
+        font-size: 12px;
+    }
+}
+*/
+
+
+
+

@@ -2,11 +2,13 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <meta name="viewport" content="width-device-width, initial-scale-1">
 </head>
 
 <body>
@@ -18,8 +20,8 @@
                         <div class="navbar-header">
                             <a href="index.html" class="navbar-logo">
                             <img src="assets/images/bear-icon.png" class="hidden-xs hidden-sm"></img></a>
-                            <button class="btn btn-subscribe navbar-btn hidden-md"><i class="fas fa-envelope"></i> SUBSCRIBE</button>
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                            <button class="btn btn-subscribe navbar-btn hidden-md hidden-lg hidden-xl" data-toggle="modal" data-target="#SubscribeModal"><i class="fas fa-envelope"></i> SUBSCRIBE</button>
+                            <button type="button" class=" btn-toggle navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <i class="fa fa-bars"></i>
                     </button>
@@ -34,7 +36,7 @@
                                 <li class="menuitem"><a href="contact.html"><i class="fas fa-comment-alt"></i> <span>Contact us</span></a></li>
                             </ul>
                             <div class="navbar-header navbar-right hidden-xs hidden-sm">
-                                <button class="btn btn-subscribe navbar-btn"><i class="fas fa-envelope"></i> SUBSCRIBE</button>
+                                <button class="btn btn-subscribe navbar-btn" data-toggle="modal" data-target="#SubscribeModal"><i class="fas fa-envelope"></i> SUBSCRIBE</button>
                             </div>
                         </div>
                     </div>
@@ -49,8 +51,39 @@
                 <h1 class="news-page-heading uppercase text">News</h1>
             </div>
             <!-- code for the timeline below was reused from the "Whiskey Drop" mini-project from earlier in the course -->
-            <div class="col-xs-12 news-table row row-table content">
-                <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-5 section-colum">
+            <div class="col-xs-12 row content">
+                <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 hidden-md hidden-lg">
+                    <div class="row">
+                    <h3 class="news-page-subheading text">Game News/Updates</h3>
+                    </div>
+                    <div class="row">
+                        <p class="text">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                            magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                            quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                            ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                            dolor in hendrerit in vulputate velit esse molestie consequat,
+                            vel illum dolore eu feugiat nulla facilisis at vero eros et
+                            accumsan et iusto odio dignissim qui blandit praesent luptatum
+                            zzril delenit augue duis dolore te feugait nulla facilisi.
+                            Nam liber tempor cum soluta nobis eleifend option congue
+                            nihil imperdiet doming id quod mazim placerat facer possim
+                            assum. Typi non habent claritatem insitam; est usus legentis
+                            in iis qui facit eorum claritatem. Investigationes
+                            demonstraverunt lectores legere me lius quod ii legunt saepius.
+                            Claritas est etiam processus dynamicus, qui sequitur mutationem
+                            consuetudium lectorum. Mirum est notare quam littera gothica,
+                            quam nunc putamus parum claram, anteposuerit litterarum formas
+                            humanitatis per seacula quarta decima et quinta decima. Eodem
+                            modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
+                            in futurum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 row content">
+                <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-5">
                     <div class="row">
                         <h3 class="news-page-subheading text">Upcoming Releases</h3>
                     </div>
@@ -81,12 +114,33 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-7 section-colum">
+                <div class="hidden-xs hidden-sm col-md-7">
                     <div class="row">
-                        <h3 class="news-page-subheading text">Game News/Updates</h3>
+                    <h3 class="news-page-subheading text">Game News/Updates</h3>
                     </div>
                     <div class="row">
-                        
+                        <p class="text">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                            magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                            quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                            ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                            dolor in hendrerit in vulputate velit esse molestie consequat,
+                            vel illum dolore eu feugiat nulla facilisis at vero eros et
+                            accumsan et iusto odio dignissim qui blandit praesent luptatum
+                            zzril delenit augue duis dolore te feugait nulla facilisi.
+                            Nam liber tempor cum soluta nobis eleifend option congue
+                            nihil imperdiet doming id quod mazim placerat facer possim
+                            assum. Typi non habent claritatem insitam; est usus legentis
+                            in iis qui facit eorum claritatem. Investigationes
+                            demonstraverunt lectores legere me lius quod ii legunt saepius.
+                            Claritas est etiam processus dynamicus, qui sequitur mutationem
+                            consuetudium lectorum. Mirum est notare quam littera gothica,
+                            quam nunc putamus parum claram, anteposuerit litterarum formas
+                            humanitatis per seacula quarta decima et quinta decima. Eodem
+                            modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
+                            in futurum.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -95,12 +149,21 @@
     <footer class="container-fluid">
         <div class="footer-container">
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col-xs-12 col-md-6">
                     <div class="discord-link">
                         <h4>Want to talk to likeminded gamers?</h4>
-                        <p>(1) Download the Discord app (2) Join the group chat!</p>
+                        <p>(1) Download the Discord app<br>(2) Join the group chat!</p>
                         <ul class="list-inline social-media">
                             <li><a href="https://discordapp.com/channels/556066321952014336/556066321952014338" target="_blank"><i class="fab fa-discord"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div class="contact-us-link hidden-xs hidden-sm">
+                        <h4>Contact us...</h4>
+                        <p>Have a game you want reviewed?<br>Want to be featured as a guest reviewer?</p>
+                        <ul class="list-inline social-media">
+                            <li><a href="contact.html"><i class="fas fa-comment-alt"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -116,6 +179,43 @@
             </div>
         </div>
     </footer>
+
+    <!-- code reused from the whiskey-drop project in the bootstrap and grid system section of this course. Have adapted the code I resused to make it relevant to this project -->
+    <div class="modal fade" id="SubscribeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title text-center" id="myModalLabel">Subscribe to our mailing list!</h2>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email" required/>
+                            <p class="help-block">We'll never share your email address with anyone</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="emailRepeat">Repeat Email address</label>
+                            <input type="email" class="form-control" id="emailRepeat" placeholder="Repeat your Email address" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordRepeat">Repeat Password</label>
+                            <input type="password" class="form-control" id="passwordRepeat" placeholder="Repeat your Password" required/>
+                        </div>
+                        <button type="submit" class="btn btn-submit center-block">Subscribe!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of reused code -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 </html>

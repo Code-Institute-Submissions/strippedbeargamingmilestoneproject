@@ -2,11 +2,13 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <meta name="viewport" content="width-device-width, initial-scale-1">
 </head>
 
 <body>
@@ -18,8 +20,8 @@
                         <div class="navbar-header">
                             <a href="index.html" class="navbar-logo">
                             <img src="assets/images/bear-icon.png" class="hidden-xs hidden-sm"></img></a>
-                            <button class="btn btn-subscribe navbar-btn hidden-md"><i class="fas fa-envelope"></i> SUBSCRIBE</button>
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                            <button class="btn btn-subscribe navbar-btn hidden-md hidden-lg hidden-xl" data-toggle="modal" data-target="#SubscribeModal"><i class="fas fa-envelope"></i> SUBSCRIBE</button>
+                            <button type="button" class=" btn-toggle navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <i class="fa fa-bars"></i>
                     </button>
@@ -34,7 +36,7 @@
                                 <li class="menuitem"><a href="contact.html"><i class="fas fa-comment-alt"></i> <span>Contact us</span></a></li>
                             </ul>
                             <div class="navbar-header navbar-right hidden-xs hidden-sm">
-                                <button class="btn btn-subscribe navbar-btn"><i class="fas fa-envelope"></i> SUBSCRIBE</button>
+                                <button class="btn btn-subscribe navbar-btn" data-toggle="modal" data-target="#SubscribeModal"><i class="fas fa-envelope"></i> SUBSCRIBE</button>
                             </div>
                         </div>
                     </div>
@@ -46,87 +48,115 @@
         <div class="row">
             <div class="reviews-container">
                 <div class="overlay"></div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="row">
-                            <div class="col-xs-10 col-xs-offset-1 reviews">
-                                <h1 class="uppercase reviews-page-heading text">Reviews</h1>
-                                <br>
-                                <img src="assets/images/the-last-of-us-photo.jpg" class="image-center"></img>
-                                <h3 class="reviews-page-subheading text">The Last Of Us: Remastered</h3>
-                                <p class="text text-center">Review by: Martin Crowley</p>
-                                <br>
-                                <p class="text">
-                                    The first thing that comes to mind when playing The Last of Us, is just how far games have come since the days of tank controls and blocky pixels running to and from on screen.<br>
-                                    To put it lightly, The Last of Us is a masterpiece and the level of polish and raw heartfelt emotion found at its core shows that Naughty Dog are one of the the greatest game developers of this generation.<br>
-                                    The storytelling is extraordinary, but it plays second fiddle to the truly exceptional character development and gameplay that is found therein.
-                                    From the pulse-pounding stealth mechanics, and the tightly refined crafting system, to the weighty close quarters combat and the risk reward loop that comes hand-in-hand with the ranged combat and inventory management typically found in most survival-horror games.<br>
-                                    Overall, I can't give this game enough praise and if you haven't yet played this game, then I envy you, as you have the eopportunity to experience this astonishing experience from start to finish through fresh eyes.
-                                </p>
-                                <h4 class="text">Favourite moment</h4>
-                                <p class="text">The prologue... Never before has a game inflicted such emotional trauma than during the prologue of The Last of Us</p>
-                                <h4 class="text">Score</h4>
-                                <p class="text">10/10</p>
-                                <h4 class="text">Recommended buy?</h4>
-                                <p class="text">Absolute must-buy for fans of immersive single player story driven experiences</p>
-                            </div>
-                            <br>
-                            <div class="col-xs-10 col-xs-offset-1 reviews">
-                                <img src="assets/images/anthem-photo.jpg" class="image-center"></img>
-                                <h3 class="reviews-page-subheading text">Anthem</h3>
-                                <p class="text text-center">Review by: Martin Crowley</p>
-                                <br>
-                                <p class="text">
-                                    The first thing that comes to mind when playing The Last of Us, is just how far games have come since the days of tank controls and blocky pixels running to and from on screen.<br>
-                                    To put it lightly, The Last of Us is a masterpiece and the level of polish and raw heartfelt emotion found at its core shows that Naughty Dog are one of the the greatest game developers of this generation.<br>
-                                    The storytelling is extraordinary, but it plays second fiddle to the truly exceptional character development and gameplay that is found therein.
-                                    From the pulse-pounding stealth mechanics, and the tightly refined crafting system, to the weighty close quarters combat and the risk reward loop that comes hand-in-hand with the ranged combat and inventory management typically found in most survival-horror games.<br>
-                                    Overall, I can't give this game enough praise and if you haven't yet played this game, then I envy you, as you have the eopportunity to experience this astonishing experience from start to finish through fresh eyes.
-                                </p>
-                                <h4 class="text">Favourite moment</h4>
-                                <p class="text">The prologue... Never before has a game inflicted such emotional trauma on a player than during the prologue of The Last of Us</p>
-                                <h4 class="text">Score</h4>
-                                <p class="text">10/10</p>
-                                <h4 class="text">Recommended buy?</h4>
-                                <p class="text">Absolute must-buy for fans of immersive single player story driven experiences</p>
-                            </div>
-                            <br>
-                            <div class="col-xs-10 col-xs-offset-1 reviews">
-                                <img src="assets/images/bloodborne-photo.jpg" class="image-center"></img>
-                                <h3 class="reviews-page-subheading text">Bloodborne</h3>
-                                <p class="text text-center">Review by: Martin Crowley</p>
-                                <br>
-                                <p class="text">
-                                    The first thing that comes to mind when playing The Last of Us, is just how far games have come since the days of tank controls and blocky pixels running to and from on screen.<br>
-                                    To put it lightly, The Last of Us is a masterpiece and the level of polish and raw heartfelt emotion found at its core shows that Naughty Dog are one of the the greatest game developers of this generation.<br>
-                                    The storytelling is extraordinary, but it plays second fiddle to the truly exceptional character development and gameplay that is found therein.
-                                    From the pulse-pounding stealth mechanics, and the tightly refined crafting system, to the weighty close quarters combat and the risk reward loop that comes hand-in-hand with the ranged combat and inventory management typically found in most survival-horror games.<br>
-                                    Overall, I can't give this game enough praise and if you haven't yet played this game, then I envy you, as you have the eopportunity to experience this astonishing experience from start to finish through fresh eyes.
-                                </p>
-                                <h4 class="text">Favourite moment</h4>
-                                <p class="text">The prologue... Never before has a game inflicted such emotional trauma on a player than during the prologue of The Last of Us</p>
-                                <h4 class="text">Score</h4>
-                                <p class="text">10/10</p>
-                                <h4 class="text">Recommended buy?</h4>
-                                <p class="text">Absolute must-buy for fans of immersive single player story driven experiences</p>
-                            </div>
-                            <br>
-                        </div>
+                <div class="row content">
+                    <h1 class="uppercase reviews-page-heading text">Reviews</h1>
+                    <br>
+                </div>
+                <div class="row the-last-of-us reviews">
+                    <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0">
+                        <img src="assets/images/the-last-of-us-photo.jpg" class="image-center"></img>
+                    </div>
+                    <div class="col-xs-10 col-xs-offset-1 col-md-7 col-md-offset-0">
+                        <h3 class="reviews-page-subheading text">The Last Of Us: Remastered</h3>
+                        <p class="text text-center">Review by: Martin Crowley</p>
+                        <br>
+                        <p class="text">
+                            The first thing that comes to mind when playing The Last of Us, is just how far games have come since the days of tank controls and blocky pixels running to and from on screen.<br> To put it lightly, The Last of Us is a masterpiece
+                            that so poignantly depicts how the apocalypse would affect the world, but more importantly the people in it. You can really feel the loss and the desperation of the people you come into contact with, and the sheer level of
+                            polish and raw heartfelt emotion found at its core shows that Naughty Dog are one of the the greatest game developers of this generation.<br> The storytelling is extraordinary, but it plays second fiddle to the truly exceptional
+                            character development and gameplay that is found therein. From the pulse-pounding stealth mechanics, and the tightly refined crafting system, to the weighty close quarters combat and the risk reward loop that comes hand-in-hand
+                            with the ranged combat and inventory management typically found in most survival-horror games.<br> Overall, I can't give this game enough praise and if you haven't yet played this game, then I envy you, as you have the eopportunity
+                            to experience this astonishing experience from start to finish through fresh eyes.
+                        </p>
+                        <h4 class="text">Favourite moment</h4>
+                        <p class="text">The prologue... Never before has a game inflicted such emotional trauma than during the prologue of The Last of Us</p>
+                        <h4 class="text">Score</h4>
+                        <p class="text">10/10</p>
+                        <h4 class="text">Recommended buy?</h4>
+                        <p class="text">Absolute must-buy for fans of immersive single player story driven experiences</p>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+                <div class="row anthem reviews">
+                    <div class="col-xs-10 col-xs-offset-1 hidden-md hidden-lg">
+                        <img src="assets/images/anthem-photo.jpg" class="image-center"></img>
+                    </div>
+                    <div class="col-xs-10 col-xs-offset-1 col-md-7 col-md-offset-1">
+                        <h3 class="reviews-page-subheading text">Anthem</h3>
+                        <p class="text text-center">Review by: Martin Crowley</p>
+                        <br>
+                        <p class="text">
+                            Now what is there to say about the game that was dubbed to be the "Destiny killer"...<br> Visually, it certainly is astonishing! And when you actually do get to play the game, it can be a real treat (but more on that later).
+                            The question on everyone's lips though, is "does anthem live up to the hype?"<br> Put simply...NO! The game does so many things well, but for every one good thing the game does, it has a habit of taking one (sometimes two)
+                            step/s in all the wrong directions. Nothing displays this more than the feeling you get when you equip one of the 4 Javelin (think Iron Man) suits, customise it with a choice of weapons, offensive/support gear, components and
+                            even cosmetic armour pieces and then finally load into the mission launch screen. More so is the feeling you get once you've loaded into the "open" world and leap from the side of Fort Tarsis, then with a swift click of L3,
+                            your thrusters are activated and you off soaring through the clouds...kinda.<br> See, this is where Anthem starts to show its cracks, as its doesn't matter how good the mountains in the backdrop really look, when the verticality
+                            of the game is stunted by a fairly low invisible ceiling. Not to say that the flying isn't great, because Bioware have really nailed the feeling of effortlessly gliding and dodging, so much so, that it's almost hard to belive
+                            its taken this long to achieve such a feeling in a game.<br> The flaws do mount up though, from the current lack of endgame content, to the infinite number of loading screens, to the far more serious issue wherein the game
+                            has caused consoles to crash (with no major lasting effects mind.)<br> All in all, id say this game has a lot of potential, and the developers are providing the game with rapid support in the form of patches and bug fixes.
+                            Whether this will be enough to keep people coming back to Anthem has yet to be seen, but I can only hope that Bioware manage to keep their fans on board long enough for them to introduce more meaningul engame content and the
+                            free DLC that they have planned further down the line.
+                        </p>
+                        <h4 class="text">Favourite moment</h4>
+                        <p class="text">The first time you do take to the skies and get to witness the beauty of the landscape below, whilst effortlessly using your aerial dodge to evade oncoming fire</p>
+                        <h4 class="text">Score</h4>
+                        <p class="text">6/10</p>
+                        <h4 class="text">Recommended buy?</h4>
+                        <p class="text">Only if you are willing to invest in a game that will get better with time. If you are looking for an immediate masterpiece, then there are far better games out there for you to invest your hard-earned money in (at least until
+                            the game has more content readily available) </p>
+                    </div>
+                    <div class="hidden-xs hidden-sm col-md-4 col-md-offset-0">
+                        <img src="assets/images/anthem-photo.jpg" class="image-center"></img>
                     </div>
                 </div>
+                <div class="row bloodborne reviews">
+                    <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0">
+                        <img src="assets/images/bloodborne-photo.jpg" class="image-center"></img>
+                    </div>
+                    <div class="col-xs-10 col-xs-offset-1 col-md-7 col-md-offset-0">
+                        <h3 class="reviews-page-subheading text">Bloodborne</h3>
+                        <p class="text text-center">Review by: Martin Crowley</p>
+                        <br>
+                        <p class="text">
+                            If you are news to the soulsborne series, then this game will be a brutal awakening to the sadistic gameplay loop of "Fight, Die, Learn, Repeat" that FromSoftware has perfected over the 3 games prior to Bloodborne. For those that have experienced the
+                            previous titles, this will be yet another journey into familiar territory, with but one major difference...<br> The combat! Or more accurately, the pace therein when engaging with one of the games
+                            many difficult enemies/bosses. Whereas the previous titles (Demon/Dark Souls) would reward you for patience and blocking heavily during combat, Bloodborne takes a far more aggressive approach that encourages you to learn on
+                            the fly when encountering the many residents of Yharnam.<br> The game starts with you as a Hunter journeying to Yharnam seeking paleblood, however upon arrival it becomes apparent that an illness has transformed most of Yharnam
+                            into beast-like creatures. The story past this point is up to the player to find out through lore and exploring the world. The story isn't what keeps your coming back to the Gothic Victorian era inspired locales though! As
+                            the main draw to the game is the feeling of dread and aticipation that hangs thick in the air everytime you step foot into a new area or face a new boss.<br> Learning to use (and master) Bloodborne's combat system of dodging
+                            and parrying will take some getting used to, and the inclusion of the new Regain/Rally system (a risk/reward style function that allows you to regain health lost when hit by an attack, by reacting quickly and attacking back
+                            before the health has actually depleted from the health bar) really does set this game apart from the previous intallments.
+                        </p>
+                        <h4 class="text">Favourite moment</h4>
+                        <p class="text">The feeling of relief and joy after overcoming the first main boss in the story after having been defeated by him multiple times</p>
+                        <h4 class="text">Score</h4>
+                        <p class="text">9/10</p>
+                        <h4 class="text">Recommended buy?</h4>
+                        <p class="text">For gamers wanting to try a game that is as rewarding as it is punishing, then bloodborne is a definite must-buy!</p>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
             </div>
-        </div>
         </div>
     </section>
     <footer class="container-fluid">
         <div class="footer-container">
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col-xs-12 col-md-6">
                     <div class="discord-link">
                         <h4>Want to talk to likeminded gamers?</h4>
-                        <p>(1) Download the Discord app (2) Join the group chat!</p>
+                        <p>(1) Download the Discord app<br>(2) Join the group chat!</p>
                         <ul class="list-inline social-media">
                             <li><a href="https://discordapp.com/channels/556066321952014336/556066321952014338" target="_blank"><i class="fab fa-discord"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div class="contact-us-link hidden-xs hidden-sm">
+                        <h4>Contact us...</h4>
+                        <p>Have a game you want reviewed?<br>Want to be featured as a guest reviewer?</p>
+                        <ul class="list-inline social-media">
+                            <li><a href="contact.html"><i class="fas fa-comment-alt"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -142,6 +172,42 @@
             </div>
         </div>
     </footer>
-</body>
+    
+    <!-- code reused from the whiskey-drop project in the bootstrap and grid system section of this course. Have adapted the code I resused to make it relevant to this project -->
+    <div class="modal fade" id="SubscribeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title text-center" id="myModalLabel">Subscribe to our mailing list!</h2>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email" required/>
+                            <p class="help-block">We'll never share your email address with anyone</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="emailRepeat">Repeat Email address</label>
+                            <input type="email" class="form-control" id="emailRepeat" placeholder="Repeat your Email address" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordRepeat">Repeat Password</label>
+                            <input type="password" class="form-control" id="passwordRepeat" placeholder="Repeat your Password" required/>
+                        </div>
+                        <button type="submit" class="btn btn-submit center-block">Subscribe!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of reused code -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </html>
