@@ -2,7 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Ubuntu:300,400,500,700');
 
-/*----- Colours -----*/
+
+
+
 
 /*----- General -----*/
 
@@ -23,6 +25,19 @@
     position: relative;
 }
 
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+
+
 
 /*----- Header -----*/
 
@@ -30,16 +45,19 @@
     margin-bottom: 0;
     top: 0;
     left: 0;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     width: 100%;
-    background-color: #000000;
+    background-color: rgba(0,0,0,0.8);
     border: 0;
     font-family: 'ubuntu', sans-serif;
     color: #ff9f00;
     padding-right: 15px;
 }
-
+/* The above style rule allows for the navbar to stay fixed at the top of the screen at all times.
+This allows for easier navigation on all devices, especially on pages where there is a lot of content,
+as it saves the user having to scroll all the way back to the top of the page. Have also made the navbar
+slightly transparent which produces a unique effect aimed towards a positive user experience.*/
 
 .navbar-toggle,
 .navbar-default .navbar-toggle:focus {
@@ -74,7 +92,7 @@
 .navbar-logo img {
     display: block;
     height: 40px;
-    margin: 10px;
+    margin: 10px 5px 10px 5px;
     padding-top: 0;
 }
 
@@ -140,10 +158,13 @@
     -o-transition: all 0.3s ease-in-out;
 }
 
-.btn:focus,.btn:active {
-   outline: none !important;
-   box-shadow: none;
+.btn:focus,
+.btn:active {
+    outline: none;
+    box-shadow: none;
 }
+
+
 
 
 
@@ -159,50 +180,42 @@
     width: 100%;
     height: 100%;
 }
+/* The overlay will allow for the image in the background to appear slightly dimmed,
+allowing for the user to more clearly see the main content*/
 
-.container-fluid {
-    padding-left: 0;
-    padding-right: 0;
-}
 
-.row {
-    margin-left: 0;
-    margin-right: 0;
-}
 
 
 
 /*----- Footer -----*/
 
 .footer-container {
-    padding: 10px 0px;
-    z-index: 1;
-    background-color: #000000;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
     border: 0;
-    font-family: 'ubuntu', sans-serif;
     color: #ff9f00;
     text-align: center;
     text-decoration: none;
-    font-size: 15px;
+    z-index: 1;
+    font-size: 10px;
+    font-family: 'ubuntu', sans-serif;
 }
 
-.contact-us-link i {
-    font-size: 30px;
-}
-
-.discord-link i {
-    font-size: 30px;
-}
-
+/* This fixed footer type allows for the footer to be located at the bottom of the screen,
+no matter how long the page you are on is. This will mean that on mobile devices, 
+when you are on a page with a lot of content, the social icons will always be visible*/
 
 .social-media {
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 
 .social-media li a i {
-    width: 40px;
-    height: 40px;
-    padding-top: 10px;
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
     border-radius: 50%;
     font-size: 20px;
     text-align: center;
@@ -222,16 +235,20 @@
 
 
 
-
 /*----- Home -----*/
 
 .home-container {
     height: 100%;
     width: 100%;
-    margin: 0px;
-    padding: 25px 0px 125px 0px;
+    margin: 0;
+    padding-bottom: 500px;
     background: url("../images/ps4-controller-home.jpg") no-repeat center fixed;
     background-size: cover;
+    /* background image is fixed, so if the webpage contains a lot of content, 
+    it will be the content what gets scrolled, but the image stays fixed in place in the background */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -241,7 +258,7 @@
     font-weight: 700;
     margin-right: 25px;
     text-align: right;
-    padding-top: 100px;
+    padding-top: 75px;
 }
 
 .home-page-subheading {
@@ -250,9 +267,13 @@
 }
 
 .home-container img {
-    width: 25%;
+    width: 125px;
     float: right;
+    margin-right: 25px
 }
+
+
+
 
 
 /*----- About -----*/
@@ -261,9 +282,14 @@
     height: 100%;
     width: 100%;
     margin: 0;
-    padding: 25px 0px 125px 0px;
+    padding-bottom: 125px;
     background: url("../images/ps4-controller-green-light.jpg") no-repeat center fixed;
     background-size: cover;
+    /* background image is fixed, so if the webpage contains a lot of content, 
+    it will be the content what gets scrolled, but the image stays fixed in place in the background */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -289,14 +315,23 @@
     padding: 0 15px;
 }
 
+
+
+
+
 /*----- Reviews -----*/
 
 .reviews-container {
     height: 100%;
     margin: 0;
-    padding: 25px 0px 125px 0px;
+    padding-bottom: 125px;
     background: url("../images/ps4-controller-blue.jpg") no-repeat center fixed;
     background-size: cover;
+    /* background image is fixed, so if the webpage contains a lot of content, 
+    it will be the content what gets scrolled, but the image stays fixed in place in the background */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -323,17 +358,26 @@
 }
 
 
+
+
+
 /*----- News -----*/
 
 .news-container {
     height: 100%;
     margin: 0;
-    padding: 25px 0px 125px 0px;
+    padding-bottom: 125px;
     background: url("../images/nintendo-switch-green.jpg") no-repeat center fixed;
     background-size: cover;
+    /* background image is fixed, so if the webpage contains a lot of content, 
+    it will be the content what gets scrolled, but the image stays fixed in place in the background */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     align-items: center;
     justify-content: center;
     position: relative;
+    text-align: center;
 }
 
 .news-page-heading {
@@ -349,6 +393,7 @@
 
 
 /*code for the timeline below was reused from the "Whiskey Drop" mini-project from earlier in the course*/
+
 .news-timeline-item {
     padding: 4em 2em 0em 2em;
     position: relative;
@@ -356,7 +401,7 @@
     border-left: 1px solid;
 }
 
-.news-timeline-item p{
+.news-timeline-item p {
     padding: 0;
     margin: 0;
 }
@@ -391,15 +436,22 @@
 
 
 
+
+
 /*----- Media -----*/
 
 .media-container {
     height: 100%;
     width: 100%;
     margin: 0;
-    padding: 25px 0px 125px 0px;
+    padding-bottom: 125px;
     background: url("../images/playstation-wood.jpg") no-repeat center fixed;
     background-size: cover;
+    /* background image is fixed, so if the webpage contains a lot of content, 
+    it will be the content what gets scrolled, but the image stays fixed in place in the background */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -417,21 +469,31 @@
 }
 
 /* help with iframe box taken from: "https://blog.theodo.fr/2018/01/responsive-iframes-css-trick/" */
+
 .video-box {
     position: relative;
     overflow: hidden;
     padding-top: 46.5%;
     margin-top: 25px;
 }
+
 .video {
-position: absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     border: 0;
 }
+
 /*end of help with iframe box */
+
+.media-links {
+    margin-top: 20px;
+}
+
+
+
 
 
 /*----- Contact -----*/
@@ -440,9 +502,11 @@ position: absolute;
     height: 100%;
     width: 100%;
     margin: 0px;
-    padding: 25px 0px 125px 0px;
+    padding-bottom: 125px;
     background: url("../images/ps4-controller-white.jpg") no-repeat center fixed;
     background-size: cover;
+    /* background image is fixed, so if the webpage contains a lot of content, 
+    it will be the content what gets scrolled, but the image stays fixed in place in the background */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -475,13 +539,14 @@ position: absolute;
     color: #0000000;
 }
 
-/* help with code for attachment button taken from "https://blog.benestudio.co/custom-file-upload-button-with-pure-css-5aacf39aa0a" */
+/* help with code for attachment button below taken from "Author: Adam Bene, on - 'https://blog.benestudio.co/custom-file-upload-button-with-pure-css-5aacf39aa0a'" */
+
 .upload-btn input[type=file] {
     font-size: 17px;
     position: relative;
     opacity: 1;
     color: #ff9f00;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 button[type="submit"] {
@@ -496,8 +561,13 @@ form label {
 }
 
 
+
+
+
 /*----- Subscribe Form -----*/
 
+/* CSS code reused from the whiskey-drop project in the bootstrap and grid system section of this course.
+Have adapted the code I resused to make it relevant to this project */
 .modal-header {
     border-bottom-color: #ff9f00;
 }
@@ -514,23 +584,128 @@ form label {
 .modal-content p {
     background-color: #000000;
     color: #ff9f00;
-    border:;
+    border: 1;
     border-color: #ff9f00;
 }
 
+
+
+
+
 /*----- Media Queries -----*/
 
-/*@media(min-width: 768px) {
+@media(min-width: 768px) {
+/* sm size (everything below this is the default size set out in the style rules,
+as the website is designed for mobile-first and the media queries use break-points
+to adapt those rules set out already) */
+    
+    /* Header */
     .menuitem span {
-        font-size: 12px;
+        font-size: 11px;
     }
-    .btn-subscribe {
-        margin:3px;
-        font-size: 12px;
+    .menuitem a i {
+        font-size: 14px;
+        margin-top: 9px;
+    }
+    .btn-sub-1 {
+        font-size: 11px;
+        margin: 16px 10px;
+    }
+/* The above media queries make it so that when the small screen width is detected and the menu extends across from a collapse bar/button,
+the menu will change the icons, text and subscribe button's size to allow them to all fit on the navbar at the current screen size*/
+
+
+    /* Home Page */
+    .home-container {
+        padding-top: 25px;
+        padding-bottom: 300px;
+    }
+
+}
+
+
+@media(min-width: 960px) {
+/* md size */
+
+    /* Header */
+    .navbar {
+        background-color: #000000;
+    }
+    
+    .menuitem a i {
+        font-size: 18px;
+    }
+    .menuitem span {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .btn-sub-1 {
+        font-size: 16px;
+        margin: 12px 10px;
+        padding-top: 10px;
+    }
+/* The above media queries make it so that when the medium screen width is detected,
+the icons, text and subscribe button's size will change to allow them to all fit on the navbar at the current screen size */
+
+    /* Footer */
+    .footer-container {
+        position: relative;
+        padding: 10px 0px;
+        font-size: 16px;
+        background-color: #000000;
+    }
+
+    .social-media {
+        padding-bottom: 5px;
+    }
+
+    .social-media li a i {
+        width: 40px;
+        height: 40px;
+        padding-top: 9px;
+        font-size: 25px;
+    }
+/*The above media query changes the social icons size slightly to make it look more aesthetically pleasing on the larger screen sizes */
+
+    /* Home Page */
+    .home-page-heading {
+        margin-right: 35px;
+        padding-top: 100px;
+    }
+    .home-page-subheading {
+        margin-right: 35px;
+        text-align: right;
+    }
+    .home-container img {
+        width: 135px;
+        float: right;
+        margin-right: 35px
+    }
+    
+    /* News */
+    .section-column {
+        padding-left: 15px;
+        float: none;
+        display: table-cell;
     }
 }
-*/
 
 
+@media(min-width: 1200px) {
+/* lg+ size*/
 
+    /* Header */
+    .menuitem a i,
+    .menuitem span {
+        font-size: 18px;
+        margin-top: 8px;
+    }
+
+    .btn-sub-1 {
+        font-size: 18px;
+        margin: 11px 13px;
+
+    }
+}
 
