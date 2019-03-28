@@ -391,6 +391,9 @@ when you are on a page with a lot of content, the social icons will always be vi
     padding-top: 5px;
 }
 
+.news-updates-standout {
+    font-style: italic;
+}
 
 /*code for the timeline below was reused from the "Whiskey Drop" mini-project from earlier in the course*/
 
@@ -468,7 +471,7 @@ when you are on a page with a lot of content, the social icons will always be vi
     padding-top: 5px;
 }
 
-/* help with iframe box taken from: "https://blog.theodo.fr/2018/01/responsive-iframes-css-trick/" */
+/* help with iframe box taken from: "https://blog.theodo.fr/2018/01/responsive-iframes-css-trick/" Author: Gregory Gan */
 
 .video-box {
     position: relative;
@@ -682,6 +685,11 @@ the icons, text and subscribe button's size will change to allow them to all fit
         float: right;
         margin-right: 35px
     }
+    
+    /* Reviews */
+    .image-center {
+    margin: 50px auto;
+}
     
     /* News */
     .section-column {
