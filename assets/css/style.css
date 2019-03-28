@@ -48,12 +48,13 @@
     position: fixed;
     z-index: 1;
     width: 100%;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     border: 0;
     font-family: 'ubuntu', sans-serif;
     color: #ff9f00;
     padding-right: 15px;
 }
+
 /* The above style rule allows for the navbar to stay fixed at the top of the screen at all times.
 This allows for easier navigation on all devices, especially on pages where there is a lot of content,
 as it saves the user having to scroll all the way back to the top of the page. Have also made the navbar
@@ -180,12 +181,9 @@ slightly transparent which produces a unique effect aimed towards a positive use
     width: 100%;
     height: 100%;
 }
+
 /* The overlay will allow for the image in the background to appear slightly dimmed,
 allowing for the user to more clearly see the main content*/
-
-
-
-
 
 /*----- Footer -----*/
 
@@ -194,7 +192,7 @@ allowing for the user to more clearly see the main content*/
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     border: 0;
     color: #ff9f00;
     text-align: center;
@@ -404,9 +402,11 @@ when you are on a page with a lot of content, the social icons will always be vi
     border-left: 1px solid;
 }
 
-.news-timeline-item p {
-    padding: 0;
+.news-timeline-item p,
+.news-timeline-item h4 {
+    padding: 5px 0px;
     margin: 0;
+
 }
 
 .news-timeline-item::before {
@@ -571,6 +571,7 @@ form label {
 
 /* CSS code reused from the whiskey-drop project in the bootstrap and grid system section of this course.
 Have adapted the code I resused to make it relevant to this project */
+
 .modal-header {
     border-bottom-color: #ff9f00;
 }
@@ -598,10 +599,9 @@ Have adapted the code I resused to make it relevant to this project */
 /*----- Media Queries -----*/
 
 @media(min-width: 768px) {
-/* sm size (everything below this is the default size set out in the style rules,
+    /* sm size (everything below this is the default size set out in the style rules,
 as the website is designed for mobile-first and the media queries use break-points
 to adapt those rules set out already) */
-    
     /* Header */
     .menuitem span {
         font-size: 11px;
@@ -614,10 +614,8 @@ to adapt those rules set out already) */
         font-size: 11px;
         margin: 16px 10px;
     }
-/* The above media queries make it so that when the small screen width is detected and the menu extends across from a collapse bar/button,
+    /* The above media queries make it so that when the small screen width is detected and the menu extends across from a collapse bar/button,
 the menu will change the icons, text and subscribe button's size to allow them to all fit on the navbar at the current screen size*/
-
-
     /* Home Page */
     .home-container {
         padding-top: 25px;
@@ -628,13 +626,12 @@ the menu will change the icons, text and subscribe button's size to allow them t
 
 
 @media(min-width: 960px) {
-/* md size */
-
+    /* md size */
     /* Header */
     .navbar {
         background-color: #000000;
     }
-    
+
     .menuitem a i {
         font-size: 18px;
     }
@@ -648,9 +645,8 @@ the menu will change the icons, text and subscribe button's size to allow them t
         margin: 12px 10px;
         padding-top: 10px;
     }
-/* The above media queries make it so that when the medium screen width is detected,
+    /* The above media queries make it so that when the medium screen width is detected,
 the icons, text and subscribe button's size will change to allow them to all fit on the navbar at the current screen size */
-
     /* Footer */
     .footer-container {
         position: relative;
@@ -669,8 +665,7 @@ the icons, text and subscribe button's size will change to allow them to all fit
         padding-top: 9px;
         font-size: 25px;
     }
-/*The above media query changes the social icons size slightly to make it look more aesthetically pleasing on the larger screen sizes */
-
+    /*The above media query changes the social icons size slightly to make it look more aesthetically pleasing on the larger screen sizes */
     /* Home Page */
     .home-page-heading {
         margin-right: 35px;
@@ -685,35 +680,39 @@ the icons, text and subscribe button's size will change to allow them to all fit
         float: right;
         margin-right: 35px
     }
-    
+
     /* Reviews */
     .image-center {
-    margin: 50px auto;
-}
-    
+        margin: 50px auto;
+    }
+
     /* News */
     .section-column {
         padding-left: 15px;
         float: none;
         display: table-cell;
     }
-}
-
-
-@media(min-width: 1200px) {
-/* lg+ size*/
-
-    /* Header */
-    .menuitem a i,
-    .menuitem span {
-        font-size: 18px;
-        margin-top: 8px;
+    .news-timeline-item h4 {
+    margin-top: 10px;
+    }
+    .news-timeline-item p,
+    .news-timeline-item h4 {
+        text-align: left;
     }
 
-    .btn-sub-1 {
-        font-size: 18px;
-        margin: 11px 13px;
 
+    @media(min-width: 1200px) {
+        /* lg+ size*/
+        /* Header */
+        .menuitem a i,
+        .menuitem span {
+            font-size: 18px;
+            margin-top: 8px;
+        }
+
+        .btn-sub-1 {
+            font-size: 18px;
+            margin: 11px 13px;
+
+        }
     }
-}
-
