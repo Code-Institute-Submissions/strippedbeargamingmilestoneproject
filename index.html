@@ -26,6 +26,7 @@
                     <i class="fa fa-bars"></i>
                     </button>
                         </div>
+                        <!-- navbar-collapse and this collapsed button type work together to form a collapsed menu, that will allow for the menu to be displayed as a "hamburger" button that will produce a dropdown menu when pressed -->
                         <div class="collapse navbar-collapse" id="navbar">
                             <ul class="nav navbar-nav">
                                 <li class="menuitem active"><a href="index.html"><i class="fas fa-home"></i> <span>Home</span></a></li>
@@ -45,21 +46,25 @@
         </div>
     </header>
     <section class="container-fluid">
+        <div><img src="assets/images/ps4-controller-home.jpg" class="page-background hidden-md hidden-lg"></img></div>
+        <!-- When setting the background img for the home container to fixed, it wasn't working on mobile devices and ios, 
+            so i have opted instead to use a seperate dedicated div for the background on mobile and tablet, which alters the picture slightly, 
+            but allows for  fixed image and for the content to be scrolled over the image, rather than the image to be stretched and scrolled with the content  -->
         <div class="home-container">
-            <div class="row">
-                <div class="overlay"></div>
-                <div class="container-fluid content">
-                    <h1 class="uppercase home-page-heading text">Stripped Bear Gaming</h1>
-                    <h3 class="home-page-subheading text">No-nonsense reviews and news,<br>stripped bare and filtered<br>for the everyday gamer...</h3>
-                    <img src="assets/images/bear-icon.png" class="home-icon"></img>
+                <div class="row">
+                    <div class="overlay"></div>
+                    <div class="container-fluid content">
+                        <h1 class="uppercase home-page-heading text">Stripped Bear Gaming</h1>
+                        <h3 class="home-page-subheading text">No-nonsense reviews and news,<br>stripped bare and filtered<br>for the everyday gamer...</h3>
+                        <img src="assets/images/bear-icon.png" class="home-icon"></img>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
     <footer class="container-fluid">
         <div class="footer-container">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-6">
+                <div class="col-md-6">
                     <div class="discord-link hidden-xs hidden-sm">
                         <h4>Want to talk to likeminded gamers?</h4>
                         <p>(1) Download the Discord app<br>(2) Join the group chat!</p>
@@ -77,6 +82,7 @@
                         </ul>
                     </div>
                 </div>
+                <!-- The social icons are the most important thing to be displayed in the footer, as this will allow for the online presence to be built/spread quicker by allowing people to connect and spead the word on more forms of social media, therefore these will be included in the footer of ALL screen sizes/devices, whereas the discord and contact us information will only be included in the footer of md+ screen sizes/devices, as the footer will be fixed to the bottom of the actual webpage and can take up more room when compared to the smaller devices (where the footer is always located at the bottom of the screen)-->
                 <div class="col-xs-12">
                     <h4 class="footer-heading">Connect with us...</h4>
                     <ul class="list-inline social-media">

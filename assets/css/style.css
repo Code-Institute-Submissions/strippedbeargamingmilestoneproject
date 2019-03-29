@@ -105,7 +105,7 @@ slightly transparent which produces a unique effect aimed towards a positive use
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
     color: #CC6200;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0);
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -170,6 +170,13 @@ slightly transparent which produces a unique effect aimed towards a positive use
 
 
 /*----- Body -----*/
+
+.page-background {
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+}
 
 .overlay {
     position: absolute;
@@ -240,13 +247,6 @@ when you are on a page with a lot of content, the social icons will always be vi
     width: 100%;
     margin: 0;
     padding-bottom: 500px;
-    background: url("../images/ps4-controller-home.jpg") no-repeat center fixed;
-    background-size: cover;
-    /* background image is fixed, so if the webpage contains a lot of content, 
-    it will be the content what gets scrolled, but the image stays fixed in place in the background */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -281,13 +281,6 @@ when you are on a page with a lot of content, the social icons will always be vi
     width: 100%;
     margin: 0;
     padding-bottom: 125px;
-    background: url("../images/ps4-controller-green-light.jpg") no-repeat center fixed;
-    background-size: cover;
-    /* background image is fixed, so if the webpage contains a lot of content, 
-    it will be the content what gets scrolled, but the image stays fixed in place in the background */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -323,13 +316,6 @@ when you are on a page with a lot of content, the social icons will always be vi
     height: 100%;
     margin: 0;
     padding-bottom: 125px;
-    background: url("../images/ps4-controller-blue.jpg") no-repeat center fixed;
-    background-size: cover;
-    /* background image is fixed, so if the webpage contains a lot of content, 
-    it will be the content what gets scrolled, but the image stays fixed in place in the background */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -365,13 +351,6 @@ when you are on a page with a lot of content, the social icons will always be vi
     height: 100%;
     margin: 0;
     padding-bottom: 125px;
-    background: url("../images/nintendo-switch-green.jpg") no-repeat center fixed;
-    background-size: cover;
-    /* background image is fixed, so if the webpage contains a lot of content, 
-    it will be the content what gets scrolled, but the image stays fixed in place in the background */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -448,13 +427,6 @@ when you are on a page with a lot of content, the social icons will always be vi
     width: 100%;
     margin: 0;
     padding-bottom: 125px;
-    background: url("../images/playstation-wood.jpg") no-repeat center fixed;
-    background-size: cover;
-    /* background image is fixed, so if the webpage contains a lot of content, 
-    it will be the content what gets scrolled, but the image stays fixed in place in the background */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -506,13 +478,6 @@ when you are on a page with a lot of content, the social icons will always be vi
     width: 100%;
     margin: 0px;
     padding-bottom: 125px;
-    background: url("../images/ps4-controller-white.jpg") no-repeat center fixed;
-    background-size: cover;
-    /* background image is fixed, so if the webpage contains a lot of content, 
-    it will be the content what gets scrolled, but the image stays fixed in place in the background */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -563,6 +528,9 @@ form label {
     padding-top: 10px;
 }
 
+.contact-form {
+    padding-bottom: 300px;
+}
 
 
 
@@ -621,7 +589,6 @@ the menu will change the icons, text and subscribe button's size to allow them t
         padding-top: 25px;
         padding-bottom: 300px;
     }
-
 }
 
 
@@ -645,8 +612,7 @@ the menu will change the icons, text and subscribe button's size to allow them t
         margin: 12px 10px;
         padding-top: 10px;
     }
-    /* The above media queries make it so that when the medium screen width is detected,
-the icons, text and subscribe button's size will change to allow them to all fit on the navbar at the current screen size */
+    /* The above media queries make it so that when the medium screen width is detected, the icons, text and subscribe button's size will change to allow them to all fit on the navbar at the current screen size */
     /* Footer */
     .footer-container {
         position: relative;
@@ -667,6 +633,14 @@ the icons, text and subscribe button's size will change to allow them to all fit
     }
     /*The above media query changes the social icons size slightly to make it look more aesthetically pleasing on the larger screen sizes */
     /* Home Page */
+    .home-container {
+        background: url("../images/ps4-controller-home.jpg") no-repeat center fixed;
+        background-size: cover;
+        /* background image is fixed, so if the webpage contains a lot of content, it will be the content what gets scrolled, but the image stays fixed in place in the background */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
     .home-page-heading {
         margin-right: 35px;
         padding-top: 100px;
@@ -681,38 +655,86 @@ the icons, text and subscribe button's size will change to allow them to all fit
         margin-right: 35px
     }
 
+    /* About Page */
+    .about-container {
+        background: url("../images/ps4-controller-green-light.jpg") no-repeat center fixed;
+        background-size: cover;
+        /* background image is fixed, so if the webpage contains a lot of content, it will be the content what gets scrolled, but the image stays fixed in place in the background */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+
     /* Reviews */
+    .reviews-container {
+        background: url("../images/ps4-controller-blue.jpg") no-repeat center fixed;
+        background-size: cover;
+        /* background image is fixed, so if the webpage contains a lot of content, it will be the content what gets scrolled, but the image stays fixed in place in the background */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+
     .image-center {
         margin: 50px auto;
     }
 
+    /* Media */
+    .media-container {
+        background: url("../images/playstation-wood.jpg") no-repeat center fixed;
+        background-size: cover;
+        /* background image is fixed, so if the webpage contains a lot of content, it will be the content what gets scrolled, but the image stays fixed in place in the background */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+
     /* News */
+    .news-container {
+        background: url("../images/nintendo-switch-green.jpg") no-repeat center fixed;
+        background-size: cover;
+        /* background image is fixed, so if the webpage contains a lot of content, it will be the content what gets scrolled, but the image stays fixed in place in the background */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+
     .section-column {
         padding-left: 15px;
         float: none;
         display: table-cell;
     }
     .news-timeline-item h4 {
-    margin-top: 10px;
+        margin-top: 10px;
+        text-align: left;
     }
-    .news-timeline-item p,
-    .news-timeline-item h4 {
+    .news-timeline-item p {
         text-align: left;
     }
 
-
-    @media(min-width: 1200px) {
-        /* lg+ size*/
-        /* Header */
-        .menuitem a i,
-        .menuitem span {
-            font-size: 18px;
-            margin-top: 8px;
-        }
-
-        .btn-sub-1 {
-            font-size: 18px;
-            margin: 11px 13px;
-
-        }
+    /* Contact Page */
+    .contact-container {
+        background: url("../images/ps4-controller-white.jpg") no-repeat center fixed;
+        background-size: cover;
+        /* background image is fixed, so if the webpage contains a lot of content, it will be the content what gets scrolled, but the image stays fixed in place in the background */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
     }
+}
+
+@media(min-width: 1200px) {
+    /* lg+ size*/
+    /* Header */
+    .menuitem a i,
+    .menuitem span {
+        font-size: 18px;
+        margin-top: 8px;
+    }
+
+    .btn-sub-1 {
+        font-size: 18px;
+        margin: 11px 13px;
+
+    }
+}
