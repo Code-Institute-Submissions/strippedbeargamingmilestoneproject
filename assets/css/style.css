@@ -55,10 +55,7 @@
     padding-right: 15px;
 }
 
-/* The above style rule allows for the navbar to stay fixed at the top of the screen at all times.
-This allows for easier navigation on all devices, especially on pages where there is a lot of content,
-as it saves the user having to scroll all the way back to the top of the page. Have also made the navbar
-slightly transparent which produces a unique effect aimed towards a positive user experience.*/
+/* The above style rule allows for the navbar to stay fixed at the top of the screen at all times. This allows for easier navigation on all devices, especially on pages where there is a lot of content, as it saves the user having to scroll all the way back to the top of the page. Have also made the navbar slightly transparent which produces a unique effect aimed towards a positive user experience.*/
 
 .navbar-toggle,
 .navbar-default .navbar-toggle:focus {
@@ -189,8 +186,7 @@ slightly transparent which produces a unique effect aimed towards a positive use
     height: 100%;
 }
 
-/* The overlay will allow for the image in the background to appear slightly dimmed,
-allowing for the user to more clearly see the main content*/
+/* The overlay will allow for the image in the background to appear slightly dimmed, allowing for the user to more clearly see the main content*/
 
 /*----- Footer -----*/
 
@@ -209,9 +205,7 @@ allowing for the user to more clearly see the main content*/
     font-family: 'ubuntu', sans-serif;
 }
 
-/* This fixed footer type allows for the footer to be located at the bottom of the screen,
-no matter how long the page you are on is. This will mean that on mobile devices, 
-when you are on a page with a lot of content, the social icons will always be visible*/
+/* This fixed footer type allows for the footer to be located at the bottom of the screen, no matter how long the page you are on is. This will mean that on mobile devices, when you are on a page with a lot of content, the social icons will always be visible*/
 
 .social-media {
     padding-bottom: 5px;
@@ -567,9 +561,7 @@ Have adapted the code I resused to make it relevant to this project */
 /*----- Media Queries -----*/
 
 @media(min-width: 768px) {
-    /* sm size (everything below this is the default size set out in the style rules,
-as the website is designed for mobile-first and the media queries use break-points
-to adapt those rules set out already) */
+    /* sm size (everything below this is the default size set out in the style rules, as the website is designed for mobile-first and the media queries use break-points to adapt those rules set out already) */
     /* Header */
     .menuitem span {
         font-size: 11px;
@@ -590,7 +582,6 @@ the menu will change the icons, text and subscribe button's size to allow them t
         padding-bottom: 300px;
     }
 }
-
 
 @media(min-width: 960px) {
     /* md size */
