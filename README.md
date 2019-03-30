@@ -107,7 +107,22 @@ Some examples of the physical testing carried out by myself on certain parts of 
 When testing the website on various devices I encountered a bug with the fixed background image that was applied to the main content container. When viewing the website on the simulated mobile and tablet devices on google chrome tools, the fixed background worked fine and would allow the content to be scrolled, whilst the image remained fixed. Yet as mentioned, the functionality wasn’t working properly on the various mobile/tablet devices that I tested the website on (iPhone 6s, iPhone 7, iPhone X, iPad and Sony Xperia), as the background was stretched across the entire length of the content that was inside the main content container. So I opted instead to create a separate dedicated div for the background on mobile and tablet, which alters the picture slightly, but it allows for the picture to stay fixed and to cover the background of the webpage, (as opposed to covering the entire background of the content and therefore making it impossible to make out what the image is) and also allows for the content to be scrolled over the image, rather than the image to be stretched and scrolled with the content.
 
 ## Deployment
-My website was coded in Cloud9. Within this I also created a local Git directory using Bash script in the terminal (command line interface) which was used for version control, which was later uploaded to the GitHub repository that I had created for my milestone project. Once the project/website was in the dedicated GitHub repository, it was then able to be made live in the settings by using GitHub Pages.
+My website was coded in Cloud9. Once I had created the workspace in Cloud9 for my project to be built in, I then turned to GitHub (which is a web-based interface that links with Git and allows you to store and view the different versions of code at the stages it was pushed to the GitHub server) and created a repository for my milestone project, I then went back to Cloud9, and into the terminal I pasted in the Command Line Interface commands that GitHub had provided me with to create a local Git repository and form a link between Git and the GitHub server.
+
+- *echo "# practice" >> README.md*
+- *git init*
+- *git add README.md*
+- *git commit -m "first commit"*
+- *git remote add origin https://github.com/Mcrowley93/strippedbeargamingmilestoneproject.git*
+- *git push -u origin master*
+
+Once I had done this, I was then able to use Bash script in the CLI at various stages to add changes I had made within the workspace, to the staging area (storing files is a 2 step process). This was done using the command: ‘*git add*‘ which could be followed with the specific file name/s that needed to be added to the staging area (prior to being committed to the repository). Alternatively, when there was a few changes that could be added all at once, the command was followed by a full stop (‘*git add .*’)
+
+Once changes had been added to the staging area, they then needed to be commited (the 2nd stage of storing files) to the repository using ‘*git commit*’. However with each commit, I also included a message that explained the reason for each commit to the repository. This was done by using the command: ‘*git commit –m “text explaining commit goes here“* ‘
+
+At this stage, the local Git repository could then be synced with the repository on the GitHub server, which was achieved by using the command: ‘git push’
+
+Once the project/website was in the dedicated GitHub repository, it was then able to be made live in the settings by using GitHub Pages.
 
 The website can be found here: https://mcrowley93.github.io/strippedbeargamingmilestoneproject/ 
 
